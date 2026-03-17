@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shabbir Kutbuddin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+    <style>
+      :root {
+        --primary: #0f172a;
+        --accent: #38bdf8;
+        --bg-light: #f8fafc;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--bg-light);
+        color: #1e293b;
+      }
+      .hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        color: white;
+        padding: 120px 0 80px;
+      }
+      .project-card {
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+        margin-bottom: 40px;
+        overflow: hidden;
+        background: white;
+      }
+      .project-img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #e2e8f0;
+        background: #f1f5f9;
+      }
+      .code-window {
+        background: #1e293b;
+        border-radius: 8px;
+        padding: 15px;
+        margin-top: 15px;
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      .badge-tech {
+        background: #e0f2fe;
+        color: #0369a1;
+        font-weight: 600;
+        margin-right: 5px;
+        border: 1px solid #bae6fd;
+      }
+      .section-title {
+        font-weight: 800;
+        color: var(--primary);
+        margin-bottom: 40px;
+        position: relative;
+      }
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: var(--accent);
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero text-center">
+      <div class="container">
+        <h1 class="display-3 fw-bold">Shabbir Kutbuddin</h1>
+        <p class="lead text-info">
+          Data Analyst / Data Scientist | M.Sc. Computer Science (AI) from
+          University of Nottingham
+        </p>
+        <div class="mt-4">
+          <a href="#projects" class="btn btn-primary px-4 py-2"
+            >View Portfolio</a
+          >
+          <a
+            href="https://github.com/shabbirk53/Portfolio"
+            class="btn btn-outline-light px-4 py-2 ms-2"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="container my-5" id="projects">
+      <h2 class="section-title">01. Multimodal AI Pipeline for Alzheimer's</h2>
+      <div class="card project-card">
+        <div class="row g-0">
+          <div class="col-lg-12 p-4">
+            <h5>Bioinformatics & Ensemble Learning</h5>
+            <p>
+              Built an end-to-end classification pipeline for AD diagnosis using
+              Whole-Genome Sequencing and MRI data.
+            </p>
+            <ul>
+              <li>
+                90.4% Balanced Accuracy using a
+                <strong>Stacked Super-Learner</strong>.
+              </li>
+              <li>Processed 1.43M genetic variants with PLINK and PCA.</li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <img
+              src="img/Pipeline.png"
+              class="project-img"
+              alt="Multimodal AI Pipeline Diagram"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Multimodal AI Pipeline for Alzheimer's Diagnosis
+            </div>
+            <img
+              src="img/manhattan_plot.png"
+              class="project-img"
+              alt="Genomic Variant Ranking (Manhattan Plot)"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: GWAS Manhattan Plot for Variant Ranking
+            </div>
+            <img
+              src="img/ancestry_scree_plot.png"
+              class="project-img"
+              alt="Ancesty PCA Scree Plot"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Ancestry PCA Scree Plot
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        02. E-Commerce Analytics & Customer Behavior
+      </h2>
+      <div class="card project-card">
+        <div class="row g-0">
+          <div class="col-lg-6 p-4">
+            <h5>Business Intelligence & Cohort Analysis</h5>
+            <p>
+              Analyzed 2,000+ orders to drive regional growth and retention
+              strategies.
+            </p>
+            <ul>
+              <li>
+                Identified that 27.5% of customers are "One-Time" buyers,
+                suggesting a high-potential win-back segment.
+              </li>
+              <li>
+                Performed SQL-based performance audits for Category Revenue.
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-12">
+            <img
+              src="img/cohort_retention.png"
+              class="project-img"
+              alt="Customer Retention Heatmap"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Monthly Cohort Retention Heatmap
+            </div>
+            <img
+              src="img/category_performance.png"
+              class="project-img"
+              alt="Category Performance Bar Chart"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Monthly Category Performance Bar Chart
+            </div>
+            <img
+              src="img/ltv_payment.png"
+              class="project-img"
+              alt="LTV vs Payment Method"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Monthly LTV vs Payment Method
+            </div>
+            <img
+              src="img/monthly_trend.png"
+              class="project-img"
+              alt="Monthly Revenue Trend Line Chart"
+            />
+            <div class="p-2 text-center small text-muted">
+              Figure: Monthly Revenue Trend Line Chart
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">03. Big Data Engine Symptom Detection</h2>
+      <div class="card project-card p-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <h5>Scalable Machine Learning on Spark</h5>
+            <p>
+              Implemented distributed classification for high-frequency engine
+              sensor data on a Spark Cluster.
+            </p>
+            <p>
+              <strong>Key Insight:</strong> Proximity Forest provided better
+              scalability compared to DTW-KNN on massive audio time-series
+              datasets by leveraging broadcast variables to minimize data
+              shuffling.
+            </p>
+          </div>
+          <div class="col-lg-12">
+            <img
+              src="img/methodology.png"
+              class="img-fluid rounded border"
+              alt="Methodology"
+            />
+            <div class="mt-3">
+              <span class="badge badge-tech">Apache Spark</span>
+              <span class="badge badge-tech">Databricks</span>
+              <span class="badge badge-tech">PySpark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="section-title">
+        04. Materials Science: Critical Temp Prediction
+      </h2>
+
+      <div class="card project-card p-4">
+        <div class="col-lg-12">
+          <h5>Predictive Modeling & Feature Engineering</h5>
+          <p>
+            Used Random Forest and XGBoost to predict critical temperatures of
+            21k+ materials.
+          </p>
+          <ul>
+            <li>
+              Identified "Valence" and "Thermal Conductivity" as the highest
+              correlating features.
+            </li>
+            <li>
+              Achieved superior performance over linear baselines by capturing
+              non-linear atomic interactions.
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <img
+                  src="img/Dist.png"
+                  class="img-fluid rounded border"
+                  alt="Distribution of Critical Temperatures"
+                />
+                <img
+                  src="img/Actual vs Predicted.png"
+                  class="img-fluid rounded border"
+                  alt="Actual vs Predicted Critical Temperatures"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5 text-center">
+      <p>Built with Bootstrap & Prism.js | © 2025 Shabbir Kutbuddin</p>
+      <p>
+        <a href="mailto:shabbirkutub@gmail.com"
+          ><p><i class="fas fa-envelope"></i> shabbirkutub@gmail.com</p></a
+        >
+        <a href="https://www.linkedin.com/in/shabbir-kutbuddin/"
+          ><p>
+            <i class="fab fa-linkedin"></i>
+            https://www.linkedin.com/in/shabbir-kutbuddin/
+          </p></a
+        >
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+  </body>
+</html>
